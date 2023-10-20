@@ -4,16 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Estrangeiro</title>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+        main {
+            background-color: white;
+            height: 2000px;
+            width: 1000px;
+            margin: auto;
+        }
+
+        main > h1 {
+            font: normal 2em Arial, sans-serif;
+            text-align: center;
+        }
+
+        main > input {
+            position: absolute;
+            left: 500px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Qual é o seu país de origem ?</h1>
-    <input type="text" name="txt1" id="txt1">
-    <input type="button" value="Verificar" onclick="Calcular()">
-    <div id="res"></div>
+    <main>
+        <h1>Qual é o seu país de origem ?</h1>
+        <input type="text" name="txt1" id="txt1">
+        <input type="button" value="Verificar" onclick="Calcular()">
+        <div id="res"></div>
+    </main>
     <script>
         function Calcular() {
-            var pais = document.getElementById('txt')
+            var pais = document.getElementById('txt1')
             var res = document.getElementById('res')
+            if (pais.value != 'Brasil') {
+                res.innerHTML = 'Vc é estrangeiro'
+            }else {
+                res.innerHTML = 'Vc é Brasileiro'
+            }
          }
     </script>
 </body>
