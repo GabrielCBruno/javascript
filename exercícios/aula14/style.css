@@ -14,9 +14,26 @@ section {
     border-radius: 10px;
     padding: 15px;
     width: 500px;
+    height: 450px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
+
+div {
+    text-align: center;
+}
+
+section > div#msg {
+    font: normal 21px Arial, sans-serif;
+    padding-bottom: 45px;
+}
+
+div#foto > img#imagem {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
 
 footer {
     color: white;
