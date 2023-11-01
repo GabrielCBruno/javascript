@@ -1,0 +1,28 @@
+@charset "UTF8";
+
+body {
+    background-color: skyblue;
+}
+
+section {
+    position: relative;
+    height: 600px;
+    width: 1000px;
+    margin: auto;
+}
+
+section > button {
+    position: absolute;
+    background-color: green;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+
+    cursor: pointer;
+
+    left: 300px;
+    top: 110px;
+
+    background-image: url(../imagens/botao.png);
+    background-size: cover;
+}
