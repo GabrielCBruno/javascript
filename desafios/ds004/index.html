@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento Tronco</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            height: 55px;
+            width: 160px;
+            padding: 5px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando o Tronco</h1>
+    <button type="button" id="btn" onclick="clicar()">Comprar Produto</button>
+    <script>
+        function clicar() {
+            let nomep = String(prompt('Que produto você está comprando?'))
+            let precop = Number (prompt(`Quanto custa o ${nomep} que você está comprando?`))
+            let pagop = Number(prompt(`Qual foi o valor que você deu para pagar o ${nomep}`))
+            let troco = pagop - precop
+            msg = `Você comprou ${nomep} que custou R$ ${precop},00. \nDeu R$ ${pagop},00 em dinheiro e vai receber R$ ${troco},00. \nVolte Sempre!`
+            alert(msg)
+        }
+    </script>
+</body>
+</html>

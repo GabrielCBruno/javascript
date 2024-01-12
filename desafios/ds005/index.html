@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: skyblue;
+        }
+
+        main {
+            height: 1000px;
+            width: 900px;
+            padding: 10px;
+            margin: auto;
+            background-color: white;
+            text-align: center;
+        }
+
+        main > button {
+            height: 55px;
+            width: 160px;
+            padding: 5px;
+            font-size: 1.1em;
+        }
+
+        main > section#saida{
+            font-size: 1.1em;
+        }
+
+        section#saida > p {
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Conversor de Medidas</h1>
+        <button type="button" onclick="clicar()">Converter</button>
+        <section id="saida">
+            <p>Clique no botão acima para iniciar.</p>
+        </section>
+    </main>
+    <script>
+        function clicar() {
+            let metros = Number(prompt('Digite uma distância em metros(m)'))
+            let resp=0;
+            let converter
+            let menu = "Escolha umas das opções abaixos: \n1- converter para Km \n2- converter para Hm \n3- converter para Dam \n4- converter para dm \n5- converter para cm \n6- converter para mm"
+            resp = Number(prompt(menu))
+            switch (resp) {
+                case 1:
+                    converter = metros/1000
+                    Math.ceil(converter)
+                    saida.innerHTML = `<br> <p><strong>A distância de ${metros} metros, corresponde a...</strong></p> \n${converter} quilômetros (Km)`
+                break
+                case 2:
+                    converter = metros/100
+                    Math.ceil(converter)
+                    saida.innerHTML = `<br> <p><strong>A distância de ${metros} metros, corresponde a...</strong></p> \n${converter} hectômetros (Hm)`
+                break
+                case 3:
+                    converter = metros/10
+                    Math.ceil(converter)
+                    saida.innerHTML = `<br> <p><strong>A distância de ${metros} metros, corresponde a...</strong></p> \n${converter} decâmetros (Dam)`
+                break
+                case 4:
+                    converter = metros * 10
+                    saida.innerHTML = `<br> <p><strong>A distância de ${metros} metros, corresponde a...</strong></p> \n${converter} decímetros (dm)`
+                break
+                case 5:
+                    converter = metros * 100
+                    saida.innerHTML = `<br> <p><strong>A distância de ${metros} metros, corresponde a...</strong></p> \n${converter} centímetros (cm)`
+                break
+                case 6:
+                    converter = metros * 1000
+                    saida.innerHTML = `<br> <p><strong>A distância de ${metros} metros, corresponde a...</strong></p> \n${converter} milímetros (mm)`
+                break
+                default:
+                    alert('Valor não disponível!')
+                break
+            }
+        }
+    </script>
+</body>
+</html>
