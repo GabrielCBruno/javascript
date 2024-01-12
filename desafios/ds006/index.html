@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperaturas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgreen;
+        }
+
+        main {
+            background-color: white;
+            height: 1000px;
+            width: 900px;
+            margin: auto;
+            padding: 15px;
+            text-align: center;
+        }
+
+        main > h1 {
+            text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        main > button {
+            height: 55px;
+            width: 160px;
+            padding: 5px;
+            font-size: 1.1em;
+        }
+
+        main > section#saida {
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Conversor de temperaturas</h1>
+        <button type="button" id="btn" onclick="clicar()">Converter</button>
+        <p>Clique no botão acima para iniciar.</p>
+        <section id="saida">
+            
+        </section>
+    </main>
+    <script>
+        function clicar () {
+            let temp = Number(prompt('Digite uma temperatura em °C (Celsius)'))
+            let resp = 0
+            let kel
+            let fah
+            kel = temp + 273,15
+            fah = (temp * 9/5) + 32 
+            saida.innerHTML = `<br><strong><p>A temperatura de ${temp}°C, corresponde a...</p></storng> <br> ${kel}°K (Kelvin) <br> ${fah}°F (Fahrenhenit)`
+        }
+    </script>
+</body>
+</html>
