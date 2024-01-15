@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+
+main {
+    height: 1200px;
+    width: 900px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+main > button#btn {
+    height: 55px;
+    width: 160px;
+    padding: 2px;
+    font-size: 1em;
+}
