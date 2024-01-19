@@ -54,5 +54,4 @@ main > section#saida {
 
 section#saida > p {
     font-family: var(--fonteParagrafo);
-    font-size: 2.5em;
 }
