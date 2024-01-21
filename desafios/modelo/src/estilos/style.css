@@ -45,7 +45,7 @@ section#entrada > button {
 
 section#entrada > p {
     font-family: var(--fonteParagrafo);
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 main > section#saida {
