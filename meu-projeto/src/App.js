@@ -1,8 +1,8 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
 import SayMayName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import Frase from './components/Frase';
+import List from './components/List';
 
 function App() {
 
@@ -10,7 +10,9 @@ function App() {
 
   return (
     <div className="App">
-      <HelloWorld/>
+      <h1>Testando o CSS</h1>
+      <Frase/>
+      <Frase/>
       <SayMayName nome ="Maria"/>
       <SayMayName nome ="João"/>
       <SayMayName nome ={nome}/>
@@ -20,6 +22,7 @@ function App() {
       profissao="Programador"
       foto="https://via.placeholder.com/150"
       />
+      <List/>
     </div>
   );
 }
