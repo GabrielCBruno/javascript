@@ -12,4 +12,19 @@ const itc=cores() //O iterator é necessário em funções geradoras.
 
 console.log(itc.next().value)
 console.log(itc.next().value) //A função continua do yield até encontrar outro yield ou até encontrar um return.
-console.log(itc.next().value) 
+console.log(itc.next().value)
+
+function* contador() {
+    let i=0
+    while(true) {
+        yield i++
+    }
+}
+
+const itc2 = contador()
+
+console.log(itc2.next().value)
+console.log(itc2.next().value)
+console.log(itc2.next().value)
+console.log(itc2.next().value)
+console.log(itc2.next().value)
