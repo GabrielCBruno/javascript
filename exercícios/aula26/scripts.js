@@ -8,4 +8,8 @@ function* cores(){ //O * indica que é uma função geradora
     yield "Azul"
 }
 
-const itc=cores() //O iterator é necessário que
+const itc=cores() //O iterator é necessário em funções geradoras.
+
+console.log(itc.next().value)
+console.log(itc.next().value) //A função continua do yield até encontrar outro yield ou até encontrar um return.
+console.log(itc.next().value) 
