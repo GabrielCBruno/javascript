@@ -1,5 +1,6 @@
 "use strect"
 
+/*Arrow Function é outro jeito de escrever uma função anônima. Se só houver um parâmetro não é obrigatório o uso dos parênteses.*/
 
 const soma=(...valores)=>{
     let res=0
