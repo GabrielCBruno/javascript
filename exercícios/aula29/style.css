@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+div.botao {
+    padding: 15px;
+    background-color: gray;
+    color: white;
+    margin: 10px;
+    border-radius: 30px;
+    height: 50px;
+    width: 200px;
+    font-size: 1.1em;
+    text-align: center;
+    border: 1px solid white;
+}
+
+div.botao:hover {
+    border: 3px solid red;
+}
