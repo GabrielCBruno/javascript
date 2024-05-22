@@ -10,6 +10,7 @@ c1.map((el)=>{
     el.addEventListener("click",(evt)=>{
         const el= evt.target
         el.classList.add("botao")
+        alert("teste")
     })
 })
 
